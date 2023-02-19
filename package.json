@@ -1,8 +1,7 @@
 {
-  "name": "create-next-app-project",
+  "name": "next-starter-ts",
   "description": "A skeleton Next.js app to quickly get started.",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.1.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
