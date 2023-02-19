@@ -1,23 +1,41 @@
 {
   "name": "create-next-app-project",
+  "description": "A skeleton Next.js app to quickly get started.",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "node scripts/clean.mjs",
+    "scaffold": "node scripts/create-component.mjs"
   },
   "dependencies": {
+    "@madeinhaus/core": "^0.15.0",
+    "@madeinhaus/utils": "0.6.0",
     "@next/font": "13.1.6",
-    "@types/node": "18.13.0",
-    "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
-    "eslint": "8.33.0",
-    "eslint-config-next": "13.1.6",
+    "@types/node": "18.14.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "clsx": "^1.2.1",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.5"
+    "sass": "^1.58.3",
+    "typescript": "4.9.5",
+    "webfontloader": "^1.6.28",
+    "zustand": "^4.3.3"
+  },
+  "devDependencies": {
+    "@madeinhaus/prettier-config": "1.2.1",
+    "chalk": "5.2.0",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "figlet": "1.5.2",
+    "inquirer": "9.1.4",
+    "prettier": "2.8.4",
+    "shelljs": "0.8.5",
+    "stylelint": "15.1.0"
   }
 }

@@ -1,0 +1,34 @@
+.root {
+    padding: 3rem 0;
+}
+
+.dogs {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.imageWrapper {
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.image {
+    display: block;
+    width: 64rem;
+    height: 48rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    opacity: 0;
+
+    &.loaded {
+        animation: fadeIn 1s linear forwards;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}

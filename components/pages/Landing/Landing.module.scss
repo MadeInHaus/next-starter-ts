@@ -1,0 +1,16 @@
+.root {
+    padding: 3rem 0;
+}
+
+.links {
+    grid-column: 1 / -1;
+}
+
+.link {
+    padding: 0.5rem 0;
+    text-underline-offset: 0.4rem;
+
+    &:first-of-type {
+        padding-top: 0;
+    }
+}
