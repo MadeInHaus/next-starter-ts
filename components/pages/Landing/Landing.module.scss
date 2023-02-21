@@ -16,8 +16,9 @@
 }
 
 .themeButton {
+    display: block;
     text-decoration: none;
-    padding: 0.3rem 0;
+    padding: 0.5rem 0;
 
     &[disabled] {
         opacity: 0.4;

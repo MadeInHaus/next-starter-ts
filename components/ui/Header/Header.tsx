@@ -16,12 +16,13 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
     return (
         <div className={cx(styles.root, className)}>
             <div className={cx(styles.container, grid.container)}>
-                <Text as="h1" className={styles.home}>
-                    <Link href="/">
-                        HAUS Next.JS Starter
-                    </Link>
+                <Text className={styles.home} as="h1">
+                    <Link href="/">HAUS Next.JS TS Starter</Link>
                 </Text>
-                <Text className={styles.phase}>PageTransitionPhase.{phase}</Text>
+                <Text className={styles.phase}>
+                    <span className={styles.phasePrefix}>PageTransitionPhase.</span>
+                    {phase}
+                </Text>
             </div>
         </div>
     );

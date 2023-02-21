@@ -26,7 +26,7 @@ const Landing = () => {
     return (
         <div className={cx(styles.root, grid.container)}>
             <Head
-                title="HAUS Next.js Starter"
+                title="HAUS Next.js TS Starter"
                 description="A skeleton Next.js app to quickly get started."
             />
             <section className={styles.section}>
