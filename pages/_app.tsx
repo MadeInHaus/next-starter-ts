@@ -14,6 +14,8 @@ import NextHead from 'next/head';
 import Header from 'components/ui/Header';
 import GridOverlay from 'components/ui/GridOverlay';
 
+import { ThemeProvider } from 'components/misc/Theme';
+
 import {
     PageTransition,
     PageTransitionContext,
@@ -35,17 +37,18 @@ const Head = () => (
 
 export default function App({ Component, pageProps }: AppProps) {
     useNextCssRemovalPrevention();
-    const key = useAsPathWithoutHash();
     return (
         <>
             <Head />
-            <PageTransitionContext>
-                <Header />
-                <PageTransition className={styles.main}>
-                    <Component {...pageProps} key={key} />
-                </PageTransition>
-            </PageTransitionContext>
-            <GridOverlay />
+            <ThemeProvider>
+                <PageTransitionContext>
+                    <Header />
+                    <PageTransition className={styles.main}>
+                        <Component {...pageProps} key={useAsPathWithoutHash()} />
+                    </PageTransition>
+                </PageTransitionContext>
+                <GridOverlay />
+            </ThemeProvider>
         </>
     );
 }

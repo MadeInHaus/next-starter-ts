@@ -7,8 +7,9 @@
     left: 0;
     width: 100%;
     height: var(--header-height);
-    border-bottom: 1px solid #aaa;
-    background-color: #eee;
+    border-bottom: 1px solid var(--border-color-1);
+    background-color: var(--surface-color-1);
+    transition: background-color 0.15s linear;
     z-index: 1;
 }
 

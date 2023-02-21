@@ -1,9 +1,11 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import { ThemeScript } from 'components/misc/Theme';
 
 export default function Document() {
     return (
         <Html lang="en">
             <Head>
+                <ThemeScript />
                 <link href="https://use.typekit.net/xyb1gmk.css" rel="stylesheet" />
             </Head>
             <body>
