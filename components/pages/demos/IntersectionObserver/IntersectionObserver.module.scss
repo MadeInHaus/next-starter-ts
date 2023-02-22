@@ -19,14 +19,12 @@
     gap: 2rem;
     border-bottom: 1px solid var(--border-color-2);
     background-color: var(--surface-color-2);
-    transition: border-bottom 0.15s linear, background-color 0.15s linear;
 
     .button {
         padding: 0.5rem 1rem;
         background-color: var(--surface-color-1);
         border: 1px solid var(--border-color-1);
         border-radius: 0.5rem;
-        transition: border 0.15s linear, background-color 0.15s linear;
 
         &:hover {
             background-color: var(--surface-color-1-hover);

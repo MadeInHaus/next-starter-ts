@@ -19,15 +19,10 @@
     width: 64rem;
     height: 48rem;
     object-fit: cover;
-    opacity: 0;
+    opacity: 0.001;
+    transition: opacity 0.5s linear;
 
     &.loaded {
-        animation: fadeIn 1s linear forwards;
-    }
-}
-
-@keyframes fadeIn {
-    100% {
         opacity: 1;
     }
 }

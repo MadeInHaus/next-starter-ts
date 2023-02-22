@@ -30,7 +30,7 @@ const LazyImage: React.FC<LazyImageProps> = ({ url, index }) => {
     const [inView, intersectionRef] = useIntersectionObserver();
     const [loaded, loadRef] = useImagePreload();
     return (
-        <div ref={intersectionRef}>
+        <div ref={intersectionRef} className={styles.itemContainer}>
             <div className={styles.index}>{index}</div>
             <img
                 ref={loadRef}
