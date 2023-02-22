@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "clean": "node scripts/clean.mjs",
-    "scaffold": "node scripts/scaffold.mjs"
+    "scaffold": "node scripts/scaffold.mjs",
+    "prettier-fix": "prettier -w ."
   },
   "dependencies": {
     "@madeinhaus/core": "^0.15.0",

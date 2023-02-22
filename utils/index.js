@@ -18,5 +18,5 @@ export function removeHash(url) {
 }
 
 export function getHash(url) {
-    return (new URL(url, 'http://a')).hash;
+    return new URL(url, 'http://a').hash;
 }

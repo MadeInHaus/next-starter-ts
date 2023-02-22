@@ -6,11 +6,7 @@ export interface LinkProps extends NextLinkProps {
     className?: string;
 }
 
-export const Link: React.FC<LinkProps> = ({
-    children,
-    className,
-    ...linkProps
-}) => (
+export const Link: React.FC<LinkProps> = ({ children, className, ...linkProps }) => (
     <NextLink {...linkProps} scroll={false} className={className}>
         {children}
     </NextLink>

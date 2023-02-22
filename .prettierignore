@@ -1,3 +1,6 @@
 package-lock.json
 package.json
-public/
+README.md
+.next
+node_modules
+public

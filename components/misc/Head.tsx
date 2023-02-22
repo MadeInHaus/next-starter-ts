@@ -9,7 +9,7 @@ export interface PageHeadProps {
     preloads?: {
         type: string;
         href: string;
-        crossOrigin: "" | "anonymous" | "use-credentials" | undefined;
+        crossOrigin: '' | 'anonymous' | 'use-credentials' | undefined;
     }[];
 }
 
