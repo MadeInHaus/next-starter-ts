@@ -31,7 +31,7 @@ interface ThemeInternalType {
 }
 
 interface ThemeContextType extends ThemeInternalType {
-    setTheme: (theme: string) => void; // eslint-disable-line no-unused-vars
+    setTheme: (theme: string) => void;
 }
 
 const ThemeContext = React.createContext<ThemeContextType | null>(null);

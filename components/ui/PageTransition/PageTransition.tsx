@@ -11,17 +11,17 @@ export interface PageTransitionProps {
     inPhaseDuration?: number;
     outPhaseDuration?: number;
     disableDefaultStyles?: boolean;
-    onSaveScrollPos?: (url: string, scrollPos: ScrollPos) => void; // eslint-disable-line no-unused-vars
-    onRetrieveScrollPos?: (url: string) => ScrollPos; // eslint-disable-line no-unused-vars
+    onSaveScrollPos?: (url: string, scrollPos: ScrollPos) => void;
+    onRetrieveScrollPos?: (url: string) => ScrollPos;
     className?: string;
     children: React.ReactElement;
 }
 
 export enum PageTransitionPhase {
-    IDLE = 'IDLE', // eslint-disable-line no-unused-vars
-    APPEAR = 'APPEAR', // eslint-disable-line no-unused-vars
-    IN = 'IN', // eslint-disable-line no-unused-vars
-    OUT = 'OUT', // eslint-disable-line no-unused-vars
+    IDLE = 'IDLE',
+    APPEAR = 'APPEAR',
+    IN = 'IN',
+    OUT = 'OUT',
 }
 
 export interface PageTransitionState {
