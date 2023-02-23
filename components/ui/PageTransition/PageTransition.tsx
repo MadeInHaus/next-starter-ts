@@ -182,16 +182,18 @@ export const PageTransition = React.forwardRef<HTMLElement, PageTransitionProps>
         const restoreScroll = () => {
             if (scrollPos.current?.hash) {
                 const el = document.querySelector(scrollPos.current.hash) as Element;
-                const style = window.getComputedStyle(el);
-                const margin = style.getPropertyValue('scroll-margin-top');
-                const { top } = el.getBoundingClientRect();
-                const { scrollTop } = document.scrollingElement as HTMLElement;
-                const y = top + scrollTop - (margin ? parseFloat(margin) : 0);
-                window.scrollTo(0, y);
-            } else {
-                const { x, y } = scrollPos.current ?? { x: 0, y: 0 };
-                window.scrollTo(x, y);
+                if (el) {
+                    const style = window.getComputedStyle(el);
+                    const scrollMargin = style.getPropertyValue('scroll-margin-top');
+                    const { top } = el.getBoundingClientRect();
+                    const { scrollTop } = document.scrollingElement as HTMLElement;
+                    const y = top + scrollTop - (scrollMargin ? parseFloat(scrollMargin) : 0);
+                    window.scrollTo(0, y);
+                    return;
+                }
             }
+            const { x, y } = scrollPos.current ?? { x: 0, y: 0 };
+            window.scrollTo(x, y);
         };
 
         switch (phase) {
