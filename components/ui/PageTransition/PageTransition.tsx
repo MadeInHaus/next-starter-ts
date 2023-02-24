@@ -7,13 +7,21 @@ import { getHash, removeHash } from 'utils';
 import styles from './PageTransition.module.scss';
 
 export interface PageTransitionProps {
+    /** The container element (default: main) */
     as?: React.ElementType<any>;
+    /** The duration of the appear phase in ms (default: 600) */
     inPhaseDuration?: number;
+    /** The duration of the out phase in ms (default: 600) */
     outPhaseDuration?: number;
+    /** Disable default styles (default: false) */
     disableDefaultStyles?: boolean;
+    /** Callback to save scroll position */
     onSaveScrollPos?: (url: string, scrollPos: ScrollPos) => void;
+    /** Callback to retrieve scroll position */
     onRetrieveScrollPos?: (url: string) => ScrollPos;
+    /** Additional class name */
     className?: string;
+    /** The content */
     children: React.ReactElement;
 }
 
