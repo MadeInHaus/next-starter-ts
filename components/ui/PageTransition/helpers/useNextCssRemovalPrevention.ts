@@ -4,17 +4,17 @@ export const useNextCssRemovalPrevention = () => {
     React.useEffect(() => {
         // Remove data-n-p attribute from all link nodes.
         // This prevents Next.js from removing server rendered stylesheets.
-        document.querySelectorAll('head > link[data-n-p]').forEach(linkElement => {
-            linkElement.removeAttribute('data-n-p');
+        document.querySelectorAll('head > link[data-n-p]').forEach(linkNode => {
+            linkNode.removeAttribute('data-n-p');
         });
 
         const mutationHandler = (mutations: MutationRecord[]) => {
             mutations.forEach(({ target, addedNodes }: MutationRecord) => {
                 if (target.nodeName === 'HEAD') {
-                    // Add data-n-href-perm attribute to all style nodes with attribute data-n-href
-                    // and remove data-n-href and media attributes.
-                    // This prevents Next.js from removing and disabling dynamic stylesheets.
-                    addedNodes.forEach((node: Node) => {
+                    // Add data-n-href-perm attribute to all style nodes with attribute data-n-href,
+                    // and remove data-n-href and media attributes from those nodes.
+                    // This prevents Next.js from removing or disabling dynamic stylesheets.
+                    addedNodes.forEach(node => {
                         const el = node as Element;
                         if (el.nodeName === 'STYLE' && el.hasAttribute('data-n-href')) {
                             const href = el.getAttribute('data-n-href');
@@ -26,12 +26,12 @@ export const useNextCssRemovalPrevention = () => {
                         }
                     });
 
-                    // Remove all stylesheets that we don't need anymore (all except the two that
-                    // were most recently added).
+                    // Remove all stylesheets that we don't need anymore
+                    // (all except the two that were most recently added).
                     const styleNodes = document.querySelectorAll('head > style[data-n-href-perm]');
                     const requiredHrefs = new Set<string>();
                     for (let i = styleNodes.length - 1; i >= 0; i--) {
-                        const el = styleNodes[i] as Element;
+                        const el = styleNodes[i];
                         if (requiredHrefs.size < 2) {
                             const href = el.getAttribute('data-n-href-perm');
                             if (href) {
