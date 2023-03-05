@@ -1,10 +1,9 @@
 import cx from 'clsx';
 
 import { useTheme } from 'components/misc/Theme';
-
+import { Link } from '@madeinhaus/nextjs-page-transition';
 import Head from 'components/misc/Head';
 import Text from 'components/ui/Text';
-import { Link } from 'components/ui/PageTransition';
 
 import grid from 'styles/modules/grid.module.scss';
 import styles from './Landing.module.scss';

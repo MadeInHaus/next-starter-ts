@@ -3,7 +3,7 @@ import cx from 'clsx';
 
 import Text from 'components/ui/Text';
 
-import { useIntersectionObserver } from '@madeinhaus/core';
+import { useIntersectionObserver } from '@madeinhaus/hooks';
 
 import grid from 'styles/modules/grid.module.scss';
 import styles from './IntersectionObserver.module.scss';

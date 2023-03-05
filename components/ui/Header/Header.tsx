@@ -2,7 +2,7 @@ import * as React from 'react';
 import cx from 'clsx';
 
 import Text from 'components/ui/Text';
-import { Link, usePageTransitionState } from 'components/ui/PageTransition';
+import { Link, usePageTransitionState } from '@madeinhaus/nextjs-page-transition';
 
 import grid from 'styles/modules/grid.module.scss';
 import styles from './Header.module.scss';

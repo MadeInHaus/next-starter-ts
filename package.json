@@ -13,7 +13,9 @@
     "prettier-fix": "prettier -w ."
   },
   "dependencies": {
-    "@madeinhaus/core": "^0.15.1",
+    "@madeinhaus/carousel": "^1.0.0",
+    "@madeinhaus/hooks": "^1.0.1",
+    "@madeinhaus/nextjs-page-transition": "^1.1.1",
     "@madeinhaus/utils": "0.6.0",
     "@next/font": "13.1.6",
     "@types/node": "18.14.0",

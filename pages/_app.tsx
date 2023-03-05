@@ -16,12 +16,10 @@ import GridOverlay from 'components/ui/GridOverlay';
 
 import { ThemeProvider } from 'components/misc/Theme';
 
-import {
-    PageTransition,
+import PageTransition, {
     PageTransitionContext,
-    useNextCssRemovalPrevention,
     useAsPathWithoutHash,
-} from 'components/ui/PageTransition';
+} from '@madeinhaus/nextjs-page-transition';
 
 import styles from 'styles/modules/app.module.scss';
 
@@ -36,7 +34,6 @@ const Head = () => (
 );
 
 export default function App({ Component, pageProps }: AppProps) {
-    useNextCssRemovalPrevention();
     return (
         <>
             <Head />

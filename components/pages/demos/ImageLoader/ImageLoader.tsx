@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cx from 'clsx';
 
-import { useIntersectionObserver, useImagePreload } from '@madeinhaus/core';
+import { useIntersectionObserver, useImagePreload } from '@madeinhaus/hooks';
 
 import grid from 'styles/modules/grid.module.scss';
 import styles from './ImageLoader.module.scss';
