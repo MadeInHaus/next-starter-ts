@@ -1,5 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
-import { ThemeScript } from 'components/misc/Theme';
+import { ThemeScript } from '@madeinhaus/nextjs-theme';
 
 export default function Document() {
     return (
