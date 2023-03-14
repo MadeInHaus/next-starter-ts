@@ -35,17 +35,15 @@ const Head = () => (
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
-        <>
+        <ThemeProvider>
             <Head />
-            <ThemeProvider>
-                <PageTransitionContext>
-                    <Header />
-                    <PageTransition className={styles.main}>
-                        <Component {...pageProps} key={useAsPathWithoutHash()} />
-                    </PageTransition>
-                </PageTransitionContext>
-                <GridOverlay />
-            </ThemeProvider>
-        </>
+            <PageTransitionContext>
+                <Header />
+                <PageTransition className={styles.main}>
+                    <Component {...pageProps} key={useAsPathWithoutHash()} />
+                </PageTransition>
+            </PageTransitionContext>
+            <GridOverlay />
+        </ThemeProvider>
     );
 }
