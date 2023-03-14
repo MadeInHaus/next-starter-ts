@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import cx from 'clsx';
 
 import styles from './Text.module.scss';
