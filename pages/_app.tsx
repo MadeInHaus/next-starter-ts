@@ -8,6 +8,9 @@ import 'styles/global/colors.scss';
 import 'styles/global/animations.scss';
 import 'styles/global/misc.scss';
 
+import '@madeinhaus/carousel/dist/index.css';
+import '@madeinhaus/nextjs-page-transition/dist/index.css';
+
 import type { AppProps } from 'next/app';
 
 import NextHead from 'next/head';
