@@ -1,8 +1,6 @@
 import * as React from 'react';
 import cx from 'clsx';
 
-import Text from 'components/ui/Text';
-
 import { useIntersectionObserver } from '@madeinhaus/hooks';
 
 import grid from 'styles/modules/grid.module.scss';
@@ -14,11 +12,11 @@ const IntersectionObserver = () => {
     return (
         <div className={styles.root}>
             <div className={styles.controls}>
-                <Text as="button" className={styles.button} onClick={() => setOnce(!once)}>
-                    {`Toggle 'once' ${once ? 'OFF' : 'ON'}`}
-                </Text>
-                <Text>{`once: ${once ? 'ON' : 'OFF'}`}</Text>
-                <Text>{`inView: ${inView ? 'YES' : 'NO'}`}</Text>
+                <button className={cx(styles.button, 'body')} onClick={() => setOnce(!once)}>
+                    {`Toggle 'once'`}
+                </button>
+                <p>{`once: ${once ? 'ON' : 'OFF'}`}</p>
+                <p>{`inView: ${inView ? 'YES' : 'NO'}`}</p>
             </div>
             <div className={cx(styles.intersectingElementContainer, grid.container)}>
                 <div ref={ref} id="anchor" className={styles.intersectingElement} />
