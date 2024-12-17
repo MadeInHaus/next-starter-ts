@@ -6,7 +6,7 @@ export const pageComponentRoute = name => {
 export const pageComponentJS = name => {
     return `import * as React from 'react';
 
-import styles from './${name}.module.scss';
+import styles from './${name}.module.css';
 
 interface ${name}Props {}
 
@@ -22,11 +22,17 @@ export default ${name};
 `;
 };
 
-export const pageComponentSCSS = () => {
-    return `@import 'styles/breakpoints';
-@import 'styles/fonts';
+export const pageComponentCSS = () => {
+    return `.root {
+}
 
-.root {
+@media (width >= 768px) {
+}
+
+@media (width >= 1280px) {
+}
+
+@media (width >= 1920px) {
 }
 `;
 };

@@ -3,8 +3,8 @@ import cx from 'clsx';
 
 import { useIntersectionObserver } from '@madeinhaus/hooks';
 
-import grid from 'styles/modules/grid.module.scss';
-import styles from './IntersectionObserver.module.scss';
+import grid from 'styles/modules/grid.module.css';
+import styles from './IntersectionObserver.module.css';
 
 const IntersectionObserver = () => {
     const [once, setOnce] = React.useState(true);

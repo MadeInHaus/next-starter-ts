@@ -3,8 +3,8 @@ import cx from 'clsx';
 
 import { Link, usePageTransitionState } from '@madeinhaus/nextjs-page-transition';
 
-import grid from 'styles/modules/grid.module.scss';
-import styles from './Header.module.scss';
+import grid from 'styles/modules/grid.module.css';
+import styles from './Header.module.css';
 
 interface HeaderProps {
     className?: string;

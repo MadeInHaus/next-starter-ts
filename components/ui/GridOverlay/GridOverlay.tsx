@@ -3,8 +3,8 @@ import cx from 'clsx';
 
 import Portal from '@madeinhaus/portal';
 
-import grid from 'styles/modules/grid.module.scss';
-import styles from './GridOverlay.module.scss';
+import grid from 'styles/modules/grid.module.css';
+import styles from './GridOverlay.module.css';
 
 const GridOverlay = () => {
     const [visible, setVisible] = React.useState(false);

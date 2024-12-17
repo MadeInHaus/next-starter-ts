@@ -4,8 +4,8 @@ import { useTheme } from '@madeinhaus/nextjs-theme';
 import { Link } from '@madeinhaus/nextjs-page-transition';
 import Head from 'components/misc/Head';
 
-import grid from 'styles/modules/grid.module.scss';
-import styles from './Landing.module.scss';
+import grid from 'styles/modules/grid.module.css';
+import styles from './Landing.module.css';
 
 const demoLinks = [
     { href: '/demos/carousel', label: 'Carousel' },

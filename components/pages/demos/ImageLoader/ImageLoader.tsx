@@ -3,8 +3,8 @@ import cx from 'clsx';
 
 import { useIntersectionObserver, useImagePreload } from '@madeinhaus/hooks';
 
-import grid from 'styles/modules/grid.module.scss';
-import styles from './ImageLoader.module.scss';
+import grid from 'styles/modules/grid.module.css';
+import styles from './ImageLoader.module.css';
 
 interface ImageLoaderProps {
     dogs: string[];

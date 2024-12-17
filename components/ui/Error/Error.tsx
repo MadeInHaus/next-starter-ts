@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import Head from 'components/misc/Head';
 
-import styles from './Error.module.scss';
+import styles from './Error.module.css';
 
 export interface ErrorProps {
     statusCode: number | string;

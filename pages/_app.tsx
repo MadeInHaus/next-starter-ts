@@ -1,13 +1,10 @@
-// Resets, global styles
-import 'styles/global/reset.scss';
-import 'styles/global/theme.scss';
-
-// Global CSS variable definitions
-import 'styles/global/grid.scss';
-import 'styles/global/colors.scss';
-import 'styles/global/animations.scss';
-import 'styles/global/misc.scss';
-import 'styles/global/typography.scss';
+// Global styles
+import 'styles/global/reset.css';
+import 'styles/global/grid.css';
+import 'styles/global/colors.css';
+import 'styles/global/animations.css';
+import 'styles/global/typography.css';
+import 'styles/global/theme.css';
 
 import '@madeinhaus/carousel/dist/index.css';
 import '@madeinhaus/nextjs-page-transition/dist/index.css';
@@ -27,7 +24,7 @@ import PageTransition, {
     useAsPathWithoutHash,
 } from '@madeinhaus/nextjs-page-transition';
 
-import styles from 'styles/modules/app.module.scss';
+import styles from 'styles/modules/app.module.css';
 
 // prettier-ignore
 const Head = () => (
