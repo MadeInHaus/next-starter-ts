@@ -3,7 +3,6 @@ import cx from 'clsx';
 
 import Portal from '@madeinhaus/portal';
 
-import grid from 'styles/modules/grid.module.css';
 import styles from './GridOverlay.module.css';
 
 const GridOverlay = () => {
@@ -25,7 +24,7 @@ const GridOverlay = () => {
         return null;
     }
 
-    const className = cx(styles.gridOverlay, grid.container, {
+    const className = cx(styles.gridOverlay, 'grid', {
         [styles.visible]: visible,
     });
 

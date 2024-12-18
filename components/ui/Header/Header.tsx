@@ -3,7 +3,6 @@ import cx from 'clsx';
 
 import { Link, usePageTransitionState } from '@madeinhaus/nextjs-page-transition';
 
-import grid from 'styles/modules/grid.module.css';
 import styles from './Header.module.css';
 
 interface HeaderProps {
@@ -14,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
     const { phase } = usePageTransitionState();
     return (
         <div className={cx(styles.root, className)}>
-            <div className={cx(styles.container, grid.container)}>
+            <div className={cx(styles.container, 'grid')}>
                 <h1 className={cx(styles.home, 'body')}>
                     <Link href="/">HAUS Next.JS TS Starter</Link>
                 </h1>

@@ -3,7 +3,6 @@ import cx from 'clsx';
 
 import { useIntersectionObserver, useImagePreload } from '@madeinhaus/hooks';
 
-import grid from 'styles/modules/grid.module.css';
 import styles from './ImageLoader.module.css';
 
 interface ImageLoaderProps {
@@ -12,7 +11,7 @@ interface ImageLoaderProps {
 
 const ImageLoader: React.FC<ImageLoaderProps> = ({ dogs }) => {
     return (
-        <div className={cx(styles.root, grid.container)}>
+        <div className={cx(styles.root, 'grid')}>
             <div className={styles.dogs}>
                 {dogs.map((dog, i) => (
                     <LazyImage key={i} url={dog} />

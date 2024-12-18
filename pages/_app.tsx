@@ -1,8 +1,7 @@
 // Global styles
 import 'styles/global/reset.css';
 import 'styles/global/grid.css';
-import 'styles/global/colors.css';
-import 'styles/global/animations.css';
+import 'styles/global/variables.css';
 import 'styles/global/typography.css';
 import 'styles/global/theme.css';
 
