@@ -3,7 +3,6 @@
   "description": "A skeleton Next.js app to quickly get started.",
   "version": "2.0.0",
   "author": "Haus",
-  "type": "module",
   "engines": {
     "node": "^20"
   },
