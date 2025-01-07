@@ -4,7 +4,7 @@ const config = [
     ...new FlatCompat().extends('next/core-web-vitals'),
     {
         files: ['**/*.{js,jsx,ts,tsx}'],
-        ignores: ['**/node_modules/**', '**/public/**'],
+        ignores: ['**/node_modules/**', '**/public/**', '**/.next/**'],
         languageOptions: {
             ecmaVersion: 'latest',
             sourceType: 'module',
