@@ -1,3 +1,9 @@
+# Retired
+
+This starter was retired on October 15, 2026 and is no longer maintained.
+Start new Haus projects from [astro-starter-ts](https://github.com/MadeInHaus/astro-starter-ts).
+Existing projects built from this starter are unaffected; the repository is kept as history.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
